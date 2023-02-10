@@ -12,6 +12,6 @@ RUN apt-get update && apt-get install -y \
     curl \
     build-essential
 
-RUN curl -s https://install.python-poetry.org | python --version $POETRY_VERSION
+RUN curl -sSL https://install.python-poetry.org | python
 
 ENTRYPOINT ["poetry"]
